@@ -1,0 +1,401 @@
+[ALKANE]
+TERT-BUTYL = t-butyl
+ISO-ALKANE = iso-alkane
+ALKANE = alkane
+
+[CC_DOUBLE_TRIPLE]
+ALKENE = alkene
+ALLENIC-CARBON = allenic carbon
+ACETYLENE = acetylene
+ALKYNE = alkyne
+# VINYL-GROUP = vinyl group
+ACETYLENIC-CARBON = acetylenic carbon
+
+[ACETAL]
+THIOACETAL-THIOKETAL = thioacetal/thioketal
+CARBOX-ACID-AMIDE-ACETAL = carboxylic acid amide acetal
+HEMIACETAL-HEMIKETAL = hemiacetal/hemiketal
+ACETAL-KETAL = acetal/ketal
+KETENE-ACETAL-DERIV = ketene acetal derivative
+
+[OXYGEN]
+DIPHENOL = 1,2-diphenol
+DIOL = 1,2-diol
+ENEDIOL = enediol
+CARBOX-ACID-ORTHOESTER = carboxylic acid orthoester
+ENOL = enol
+ENOLETHER = enolether
+#
+#
+CARBONYL-HYDRATE = carbonyl hydrate
+CARBOX-ACID-ANHYDRIDE = carboxylic acid anhydride
+ALPHA-HYDROXYACID = alpha-hydroxyacid
+PRIM-ALCOHOL = prim. alcohol
+SEC-ALCOHOL = sec. alcohol
+TERT-ALCOHOL = tert. alcohol
+#
+CARBONIC-ACID-ESTER = carbonic acid esters
+# CARBONIC-ACID-DIESTER = carbonic acid diester
+OXOACID = oxoacid
+PHENOL = phenol
+KETENE = ketene
+CARBOX-ACID-UNSAT = unsaturated carboxylic acid
+LACTONE = lactone
+CARBONIC-ACID-MONOESTER = carbonic acid monoester
+CARBONYL-METHYL-ESTER = carbonyl methyl ester
+ACID-ANHYDRIDE = carboxylic acid anhydride
+DIALKYLETHER = dialkylether
+HYDROPEROXIDE = hydroperoxide
+# TERM-ALDEHYDE = terminal aldehyde
+ALDEHYDE = aldehyde
+KETONE = ketone
+CARBOX-ACID = carboxylic acid
+CARBOX-ACID-ESTER = carboxylic acid ester
+CARBONIC-ACID-DERIV = carbonic acid deriv.
+CARBONYL-METHYL = carbonyl methyl
+# ALCOHOL = alcohol
+ETHER = ether
+ALKYLARYLETHER = alkylarylether
+DIARYLETHER = dialkylether
+CARBOX-ACID-DERIV = carboxylic acid deriv.
+CARBOX-ACID-SALT = carboxylic acid salt
+ETHOXY = ethoxy
+# HYDROXY-COMPOUNDS = hydroxy compound (alcohol/phenol)
+PEROXIDE = peroxyde
+METHOXY = methoxy
+CARBONYL-GROUP = carbonyl group
+HYDROXYL = hydroxyl
+
+
+[NITROGEN]
+AMINAL = aminal
+CARBOX-ACID-AMIDRAZONE = carboxylic acid amidrazone
+ENAMINE = enamine
+DIAMINE = diamine
+CARBOX-ACID-AMIDINE = carboxylic acid amidine
+IMINE = imine
+TERT-AMINE = tert. amine
+QUAT-AMMONIUM-SALT = quaternary ammonium salt
+GUANIDINES = guanidines
+CARBODIIMIDE = carbodiimide
+PRIM-AMINE = prim. amine
+PRIM-ALIPHAT-AMINE = prim. aliphat. amine
+PRIM-AROMAT-AMINE = prim. aromat. amine
+SEC-MIXED-AMINE = sec. mixed amine (aryl alkyl)
+TERT-ALIPHAT-AMINE = tert. aliphat. amine
+TERT-MIXED-AMINE = tert. mixed amine (aryl/alkyl)
+TERT-AROMAT-AMINE = tert. arom. amine
+AZIDE = azide
+AZO-COMPOUND = azo compound
+TERMINAL-AZO = terminal azo
+SEC-AROMAT-AMINE = sec. aromatic amine
+SEC-AMINE = sec. amine
+SEC-ALIPHAT-AMINE = sec. aliphatic amine
+AMINE = amine
+HYDRAZONE = hydrazone
+DIAZONIUM-SALT = diazonium salt
+# NITRILE = nitrile
+ISO-NITRILE = Iso-nitrile
+DIAZO = diazo
+CYANO = cyano
+AMIDINIUM = amidinium ion
+AMIDINE = amidine
+HYDRAZINE = hydrazine
+HYDRAZINE-DERIV = hydrazine deriv.
+
+[NITROGEN_AND_OXYGEN]
+AMINOALCOHOL = 1,2-aminoalcohol
+AMINOPHENOL = aminophenol
+SEMICARBAZONE = semicarbazone
+HEMIAMINAL = hemiaminal
+AMINO-ACID = aminoacid
+ISOUREA = isourea
+METHYL-AMIDE = methyl amide
+OXIME = oxime
+OXIME-ETHER2 = oxime ether
+# OXIME-ETHER = oxime-ether-2
+CARBOX-ACID-AMIDE = carboxylic acid amide
+CARBOX-ACID-PRIM-AMIDE = carboxylic acid prim. amide
+CARBOX-ACID-TERT-AMIDE = carboxylic acid tert. amide
+LACTAM = lactam
+CARBOX-ACID-HYDRAZINE = lactam
+CARBOX-ACID-AZIDE = carboxylic acid azide
+IMIDO-ESTER = imido ester
+CARBAMIC-ACID-DERIV = carbamic acid deriv.
+N-OXIDE = n-oxide
+HYDROXYLAMINE = hydroxylamine
+CARBOX-ACID-SEC-AMIDE = carboxylic acid sec. amide
+CARBOX-ACID-IMIDE = carboxylic acid imide
+CARBOX-ACID-UNSUBST-IMIDE = carboxylic acid unsubst. imide
+CARBOX-ACID-SUBST-IMIDE = carboxylic acid subst. imide
+HYDROXAMIC-ACID = hydroxamic acid
+URETHANE = carbamic acid ester
+SEMICARBAZIDE = semicarbazide
+NITRATE = nitrate
+ACYL-CYANIDE = acyl cyanide
+UREA = urea
+CYANATE = cyanante
+ISOCYANATE = isocyanate
+NITRO-COMPOUND = nitro
+NITRITE = nitrite
+CARBAMIC-ACID = carbamic acid
+NITROSO-COMPOUND = nitroso
+# HYDROX-AMINE = hydroxylamine-new
+AMIDE = amide
+CARBONYL-NITROGEN = carbonyl with nitrogen
+
+[SULFUR]
+DITHIOPHENOL = dithiophenol
+THIOHEMIAMINAL = thiohemiaminal
+DITHIOL = dithiol
+SULFONE = sulfone
+DISULFIDE = disulfide
+METHYL-THIO = methylthio
+THIOCARBONYL = thiocarbonyl
+THIOALDEHYDE = thioaldehyde
+THIOKETONE = thioketone
+ALKYLARYLTHIOETHER = alkylarylthioethers
+THIOETHER = thioether
+DIALKYLTHIOETHER = dialkylthioethers
+SULFEN-ACID-DERIV = sulfenic acid deriv.
+THIOL = thiol
+ALKYL-THIOL = alkyhthiol
+ARYL-THIOL = arylthiol
+
+[OXYGEN_AND_SULFUR]
+METHYL-ESTER-SULFONYL = methyl ester sulfonyl
+METHYL-SULFONYL = methyl sulfonyl
+SULFUR-ACID-ESTER = sulfuric acid ester
+SULFUR-ACID-DIESTER = sulfuric acid diester
+THIOCARBON-ACID-ESTER = thiocarbonic acid ester
+THIOCARBON-ACID-DIESTER = thiocarbonic acid diester
+SULFUR-ACID-MONOESTER = sulfuric acid monoester
+SULFON-ACID-ESTER = sulfonic acid ester
+THIOCARBOX-ACID-ESTER = thiocarboxylic acid ester
+THIOLACTONE = thiolactone
+THIOCARBON-ACID-MONOESTER = thiocarbonic acid monoester
+SULFUR-ACID = sulfuric acid
+SULFUR-ACID-DERIV = sulfuric acid deriv.
+SULFON-ACID = sulfonic acid
+SULFON-ACID-DERIV = sulfonic acid deriv.
+SULFONE = sulfone
+SULFIN-ACID-ESTER = sulfinic acid ester
+METHYL-SULFINYL = methyl sulfinyl
+THIOCARBOX-ACID-DERIV = thiocarboxylic acid deriv.
+THIOCARBOX-ACID = thiocarboxylic acid
+THIOCARBON-ACID-DERIV = thiocarbonic acid deriv.
+SULFOXIDE = sulfoxide
+SULFIN-ACID-DERIV = sulfinic acid deriv.
+SULFIN-ACID = sulfinic acid
+SULFEN-ACID-ESTER = sulfenic acid ester
+SULFEN-ACID = sulfenic acid
+#
+
+[NITROGEN_AND_SULFUR]
+THIOSEMICARBAZONE = thiosemicarbazone
+ISOTHIOUREA = isothiourea
+THIOCARBOX-ACID-AMIDE = thiocarboxylic acid amide
+IMIDOTHIOESTER = imidothioester
+AMINO-THIOL = aminothiol
+THIOSEMICARBAZIDE = thiosemicarbazide
+SULFEN-ACID-AMIDE = sulfenic acid amide
+SULFONE = sulfone
+THIOUREA = thiourea
+THIOCYANATE = thiocyanate
+ISOTHIOCYANATE = isothiocyanate
+
+[NITROGEN_AND_OXYGEN_AND_SULFUR]
+METHYL-SULFONAMIDE = methyl sulfonamide
+SULFUR-ACID-AMIDE-ESTER = sulfuric acid amide ester
+THIOCARBAM-ACID-ESTER = thiocarbamic acid ester
+SULFUR-ACID-AMIDE = sulfuric acid amide
+SULFUR-ACID-AMIDE-DIESTER = sulfuric acid diamide
+SULFONAMIDE = sulfonamide
+THIOCARBAM-ACID = thiocarbamic acid
+THIOCARBAM-ACID-DERIV = thiocarbamic acid deriv.
+SULFIN-ACID-AMIDE = sulfinic acid amide
+
+[HALOGEN]
+THIOPHOSPHOR-ACID-HALIDE = thiophosphoric acid halide
+PHOSPHORIC-ACID-HALIDE = phosphoric acid halide
+PHOSPHON-ACID-HALIDE = phosphonic acid halide
+THIOCARBON-ACID-ESTER-HALIDE = thiocarbnoic acid ester halide
+SULFONYL-HALIDE = sulfonyl halide
+SULFURYL-HALIDE = sulfuryl halide
+IMIDOYL-HALIDE = imidoyl halide
+CARBONIC-ACID-ESTER-HALIDE = carbonic acid ester halide
+CARBAMIC-ACID-HALIDE = carbamic acid halide
+SULFIN-ACID-HALIDE = sulfinic acid halide
+SULFEN-ACID-HALIDE = sulfenic acid halide
+# ACYL-FLUORIDE = acyl fluoride
+# ACYL-CHLORIDE = acyl chloride
+# ACYL-BROMIDE = acyl bromide
+# ACYL-IODIDE = acyl iodide
+ACYL-HALIDE = acyl halide
+TRI-FLUORO-METHYL = trifluoromethyl
+# VINYL-FLUORIDE = vinyl fluoride
+# VINYL-CHLORIDE = vinyl chloride
+# VINYL-BROMIDE = vinyl bromide
+# VINYL-IODIDE = vinyl iodide
+VINYL-HALIDE = vinyl halide
+# ALKYNYL-FLUORIDE = alkynyl fluoride
+# ALKYNYL-CHLORIDE = alkynyl chloride
+# ALKYNYL-BROMIDE = alkynyl bromide
+# ALKYNYL-IODODE = alkynyl iodide
+ALKYNYL-HALIDE = alkynyl halide
+# BENZYL-FLUORIDE = benzyl fluoride
+# BENZYL-CHLORIDE = benzyl chloride
+# BENZYL-BROMIDE = benzyl bromide
+# BENZYL-IODIDE = benzyl iodide
+BENZYL-HALIDE = benzyl halide
+# ALKYL-FLUORIDE = alkyl fluoride
+# ALKYL-CHLORIDE = alkyl chloride
+# ALKYL-BROMIDE = alkyl bromide
+# ALKYL-IODIDE = alkyl iodide
+ALKYL-HALIDE = alkyl halide
+# ARYL-FLUORIDE = aryl fluoride
+# ARYL-CHLORIDE = aryl chloride
+# ARYL-BROMIDE = aryl bromide
+# ARYL-IODIDE = aryl iodide
+ARYL-HALIDE = aryl halide
+HALOGEN-DERIV = halogen deriv.
+
+[3_ATOMS_CYCLE]
+OXADIAZIRIDINE = oxadiaziridine
+DIOXAZIRIDINE = dioxaziridine
+OXAZIRIDINE = oxaziridine
+THIODIAZIRIDINE = thiodiaziridine
+DITHIAZIRIDINE = dithiaziridine
+TRIAZIRIDINE = triaziridine
+DIAZIRIDINE = diaziridine
+TRIOXIRANE = trioxirane
+DIOXIRANE = dioxirane
+THIAZIRIDINE = thiaziridine
+TRITHIIRANE = trithiirane
+THIODIAZIRENE = thiodiazirene
+OXADIAZIRENE = oxadiazirene
+OXAZIRENE = oxazirene
+TRIAZIRENE = triazirene
+DIAZIRENE = diazirene
+AZIRENE = azirine
+OXIRENE = oxirene
+THIIRENE = thiirene
+THIAZERENE = thiazerene
+3-ATOM-HETEROCYCLE = 3-atom heterocycle
+CYCLO-PROPYL = cyclo-propyl
+
+[OXIRANE_ETC]
+AZIRIDINE = aziridine
+THIIRANE = thiirane
+OXIRANE = oxirane
+
+[4_ATOMS_CYCLE]
+DIAZETINE = diazetines
+DIOXETENE = dioxetenes
+DITHIETENE = dithietenes
+DIAZETIDINE = diazetidines
+DIOXETANE = dioxetanes
+DITHIETANE = dithietanes
+AZETE = azetenes
+OXETENE = oxetenes
+THIETENE = thietenes
+AZETIDINE = azetidines
+OXETANE = oxetanes
+THIETANE = thietanes
+4-ATOM-HETEROCYCLE = 4-atom-heterocycle
+CYCLOBUTYL = cyclo-butyl
+
+[5_ATOMS_CYCLE]
+INDOLE = indoles
+PENTAZOLE = pentazoles
+PENTAZOLIDINE = pentazolidines
+PENTAOXOLANE = pentaoxolanes
+PENTATHIOLANE = pentathiolanes
+TETRAZOLE = tetrazoles
+OXATRIAZOLE = oxatriazoles
+THIATRIAZOLE = thiatriazoles
+TRIAZOLIDINE = triazolidines
+TRIOXOLANE = trioxolanes
+TRITHIOLANE = trithiolanes
+TRIAZOLE = triazoles
+OXADIAZOLE = oxadiazolenes
+TETRAZOLIDINE = tetrazolidines
+TETRAOXOLANE = tetraoxolanes
+TETRATHIOLANE = tetrathiolanes
+OXAZOLE = oxazoles
+OXAZOLIUM = oxazolium salts
+THIAZOLE = thiazoles
+THIAZOLIUM = thiazolium salts
+DIAZOLE = diazoles
+DIOXOLANE = dioxolane
+THIOPHENE = thiophenes
+PYRROL = pyrrole
+FURAN = furan
+AZOLE = azoles
+PYRROLINE = pyrrolines
+PYRROLIDINE = pyrrolidines
+5-ATOM-HETEROCYCLE = 5-atom-heterocycle
+CYCLOPENTYL = cyclopentyl
+
+[6_ATOMS_CYCLE]
+IMINOHETARENE = iminohetarenes
+THIOXOHETARENE = thiohetarenes
+OXOHETARENE = oxohetarenes
+HEXAZINE = hexazines
+PENTOXANE = pentoxanes
+PENTATHIANE = pentathianes
+PENTAZINE = pentazines
+TETROXANE = tetroxanes
+TETRATHIANE = tetrathianes
+TETRAZINE = tetrazines
+TRIOXANE = trioxanes
+TRITHIANE = trithianes
+TRIAZINE = triazines
+THIOPYRAN = thiopyranes
+PYRAN = pyranes
+PYRIDINE = pyridines
+PYRIDINIUM = pyridinium
+PIPERIDINE = piperidines
+PYRIMIDINE = pyrimidines
+PYRAZINE = pyrazines
+PYRIDAZINE = pyridazines
+DIOXANE = dioxanes
+DITHIANE = dithianes
+BENZENE = benzene
+6-ATOM-HETEROCYCLE = 6-atom-heterocycle
+CYCLOHEXYL = cyclo-hexyl
+
+[HETEROCYCLE]
+HETEROCYCLE = heterocyclic compound
+AROM-HETEROCYCLE = heterocyclic aromatic compound
+
+[MULTI_RING]
+BENZOOXAXOLE = benzooxazoles
+BENZOTHIAZOLE = benzothiazoles
+INDOLE = indoles
+
+[PHOSPHORUS]
+PHOSPHORIC-ACID-ESTER = phosphoric acid ester
+PHOSPHORIC-ACID-DERIV = phosphoric acid deriv.
+PHOSPHORIC-ACID-AMIDE = phosphoric acid amide
+THIOPHOSPHOR-ACID-ESTER = thiophosphoric acid ester
+PHOSPHON-ACID-ESTER = phosphonic acid ester
+THIOPHOSPHOR-ACID = thiophosphoric acid
+THIOPHOSPHOR-ACID-AMIDE = thiophosphoric acid amide
+THIOPHOSPHOR-ACID-DERIV = thiophosphoric acid deriv.
+PHOSPHINOXIDE = phosphinoxide
+PHOSPHON-ACID = phosphonic acid
+PHOSPHON-ACID-AMIDE = phosphonic acid amide
+PHOSPHON-ACID-DERIV = phosphonic acid deriv.
+PHOSPHORIC-ACID = phosphoric acid
+PHOSPHINE = phosphine
+
+[MISC]
+BORONIC-ACID-ESTER = boronic acid ester
+BORONIC-ACID = boronic acid
+BORONIC-ACID-DERIV = boronic acid deriv.
+ORGANOLITHIUM = organolithium compound
+ORGANOMAGNESIUM = organomagnesium compound
+ORGANOMETALLIC = organometallic compound
+CATION = cation
+ANION = anion

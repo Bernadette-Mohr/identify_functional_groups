@@ -1,0 +1,399 @@
+[ALKANE]
+# TERT-BUTYL = *-[C;D4]([C;D1])([C;D1])-[C;D1]
+# ISO-ALKANE = [#6][CX4](-C)[#6]
+ALKANE = [CX4]
+
+[CC_DOUBLE_TRIPLE]
+ALKENE = [$([CX2](=C)=C),$([CX3]=[CX3])]
+ALLENIC-CARBON = [$([CX2](=C)=C)]
+ACETYLENE = *-[C;D2]#[C;D1;H]
+ALKYNE = [CX2]#[CX2]
+# VINYL-GROUP = [$([CX3]=[CX3])]
+# ACETYLENIC-CARBON = [$([CX2]#C)]
+
+[ACETAL]
+THIOACETAL-THIOKETAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([SX2][#6;!$([CX3]=[OX1,SX1,NX2]);!$(C#N)])[SX2,OX2][#6;!$([CX3]=[OX1,SX1,NX2]);!$(C#N)]
+CARBOX-ACID-AMIDE-ACETAL = [CH1,$([CX4][#6])]([OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])])([OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])])[NX3]([H,*])[H,*]
+HEMIACETAL-HEMIKETAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OH1])[OX2][#6;!$([CX3]=[OX1,SX1,NX2])]
+ACETAL-KETAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OX2][#6;!$([CX3]=[OX1,SX1,NX2])])[OX2][#6;!$([CX3]=[OX1,SX1,NX2])]
+KETENE-ACETAL-DERIV = [#1,#6][CX3]([#1,#6])=[CX3]([!#6!#1])[!#6!#1]
+
+[OXYGEN]
+DIPHENOL = [$(c([OH1])c([OH1])),$(c([OH1])[aR1]c([OH1])),$(c1([OH1])aac([OH1])aa1)]
+DIOL = [CX4]([OH1])([H,#6])([H,#6])[CX4]([OH1])([H,#6])([H,#6])
+ENEDIOL = [CX3]([H,#6])([OH1])=[CX3]([H,#6])([OH1])
+CARBOX-ACID-ORTHOESTER = [H,#6][CX4]([OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])])([OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])])[OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])]
+ENOL = [OX2H][#6X3]=[#6]
+ENOLETHER = [CX3]([H,#6])([H,#6])=[CX3]([OX2][C;!$([CX3]([OX2])=[OX1,SX1,NX2,C])])[H,#6]
+CARBONYL-HYDRATE = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OH1])[OH1]
+CARBOX-ACID-ANHYDRIDE = [#6][#6X3](=[OX1])[#8X2][#6X3](=[OX1])[#6]
+ALPHA-HYDROXYACID = [OH1][CX3](=[OX1])[CX4]([OH1])[#1,#6]
+# PRIM-ALCOHOL = [$([#6][CH2][OH1]),$([CH3][OH1])]
+# SEC-ALCOHOL = [OH1][CX4H1]([#6])[#6]
+# TERT-ALCOHOL = [CX4]([OH1])([#6])([#6])[#6]
+CARBONIC-ACID-ESTER = [H,#6&!$([CX3]=[OX1,SX1,NX2])][OX2][CX3](=[OX1])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]
+# CARBONIC-ACID-DIESTER = [#6;!$([CX3]=[OX1,SX1,NX2])][OX2][CX3](=[OX1])[OX2][#6;!$([CX3]=[OX1,SX1,NX2])]
+OXOACID = [OH1][CX3](=[OX1])[CX3](=[OX1])[#1,#6]
+PHENOL = [OX2H][cX3]:[c]
+KETENE = [OX1]=[CX2]=[CX3]([H,#6])[H,#6]
+# CARBOX-ACID-UNSAT = [OH1][CX3](=[OX1])[CX3]=[CX3]
+LACTONE = [#6R][CX3R](=[OX1])[OX2R][#6R;!$([CX3R]=[OX1,SX1,NX2])]
+CARBONIC-ACID-MONOESTER = [OH1][CX3](=[OX1])[OX2][#6;!$([CX3]=[OX1,SX1,NX2])]
+CARBONYL-METHYL-ESTER = *-C(=O)[O;D2]-[C;D1;H3]
+ACID-ANHYDRIDE = [#6X3](=[OX1])[#8X2][#6X3](=[OX1])
+# DIALKYLETHER = [OD2]([C])[C]
+HYDROPEROXIDE = [H,#6][OX2][OX2H1]
+ALDEHYDE = [CX3H1](=O)[#6]
+KETONE = [#6][CX3](=O)[#6]
+CARBOX-ACID = [CX3](=[OX1])[OX2H1]
+CARBOX-ACID-ESTER = [CX3](=[OX1])[OX2][#6;!$([CX3]=[OX1,SX1,NX2])]
+CARBONIC-ACID-DERIV = [$([CX3](=[OX1])([!H!#6])[!H!#6]);!$([CX3](=[OX1])([#7,#16X2,#15,#5])[#8X2,#16X2,#7,#15,#5])]
+# CARBONYL-METHYL = *-C(=O)-[C;D1;H3]
+# ALCOHOL = [$([CX4][OH1]);!$(C([OH1])[#7,#8,#15,#16,F,Cl,Br,I])]
+ETHER = [#6&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))&!$([CX3]([OX2])=[OX1,SX1,NX2,C])][OX2][#6&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))&!$([CX3]([OX2])=[OX1,SX1,NX2,C])]
+# ETHER = [OD2]([#6])[#6]
+# ALKYLARYLETHER = [OD2]([C])[c]
+# DIARYLETHER = [OD2]([c])[c]
+CARBOX-ACID-DERIV = *-C(=O)[O;D1]
+CARBOX-ACID-SALT = *-C(=[OX1])[OX1-]
+ETHOXY = *-[O;D2]-[C;D2]-[C;D1;H3]
+# HYDROXY-COMPOUNDS = [#6;!$([CX4]([OH1])[#8,#16,#7,#15]);!$([CX3]([OH1])=[OX1,SX1,NH2,C])][OH1]
+PEROXIDE = [OX2,OX1-][OX2,OX1-]
+METHOXY = *-[O;D2]-[C;D1;H3]
+CARBONYL-GROUP = [$([CX3]=[OX1]),$([CX3+]-[OX1-])]
+HYDROXYL = [O;H1;$(O-!@[#6;!$(C=!@[O,N,S])])]
+
+
+[NITROGEN]
+AMINAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([NX3]([H,*])[H,*])[NX3]([H,*])[H,*]
+CARBOX-ACID-AMIDRAZONE = [H,#6][NX2]=[CX3]([H,#6])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[H,#6;!$([CX3]=[OX1,SX1,NX2])]
+ENAMINE = [CX3]([H,C])([H,#6])=[CX3]([H,#6])[NX3;!$([NX3](=[OX1])=[OX1]);!$([NX3+](=[OX1])[O-])]([H,*])[H,*]
+DIAMINE = [NX3]([H,#6&!$([CX3]=[OX1,SX1,NX2,C])])([H,#6&!$([CX3]=[OX1,SX1,NX2,C])])[CX4][CX4][NX3]([H,#6&!$([CX3]=[OX1,SX1,NX2,C])])([H,#6&!$([CX3]=[OX1,SX1,NX2,C])])
+CARBOX-ACID-AMIDINE = [H,#6][NX2]=[CX3]([H,#6])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[H,#6;!$([CX3]=[OX1,SX1,N])]
+IMINE = [$([CX3]([#6])[#6]),$([CX3H][#6])]=[$([NX2][#6]),$([NX2H]),$(C=[NX2])]
+QUAT-AMMONIUM-SALT = [NX4,NX4+]([#6])([#6])([#6])[#6]
+#GUANIDINE = [$(N[CX3](=[NX2][H,#6])N),$([N;D3]-[C;H0;D3](=[N;D2])-[N;D3])]
+GUANIDINES = [N;D3]-[C;H0;D3](=[N;D2])-[N;D3]
+CARBODIIMIDE = [H,#6;!$([CX3]=[OX1,SX1])][NX2]=[CX2]=[NX2][H,#6&!$([CX3]=[OX1,SX1])]
+# PRIM-AMINE = [NX3;H2;!$(NC=[!#6]);!$(NC#[!#6])][#6]
+# PRIM-ALIPHAT-AMINE = [NX3;H2][CX4;!$([CX4]([NH2])[O,N,S,P])]
+# PRIM-AROMAT-AMINE = [NX3H2]c
+# SEC-ALIPHAT-AMINE = [N;H1;D2;$(N(-C)-C);!$(N-C=[O,N,S])]
+# SEC-MIXED-AMINE = [NX3;H1](C)c
+# SEC-AROMAT-AMINE = [$([NX3;H1](c)c),$([N;H1;D2;$(N(-[c])-[#6]);!$(N-C=[O,N,S])])]
+# TERT-ALIPHAT-AMINE = [NX3]([CX4;!$([CX4]([NX3])[O,S,N,P])])([CX4;!$([CX4]([NX3])[O,S,N,P])])[CX4;!$([CX4]([NX3])[O,S,N,P])]
+# TERT-MIXED-AMINE = c[NX3]([CX4;!$([CX4]([NX3])[O,N,S,P])])[c,CX4;!$([CX4]([NX3]c)[O,S,N,P])]
+# TERT-AROMAT-AMINE =  [N;H0;D3;$(N(-[c])(-[#6])-[#6]);$(N-C=[O,N,S])]
+# TERT-AMINE = [N;H0;D3;$(N(-[#6])(-[#6])-[#6]);!$(N-C=[O,N,S])]
+AZIDE = [#6;!$([CX3]=[OX1,SX1])][$([NX2]=[NX2+]=[NX1-]),$(N=[NX2+]=N),$([NX2-]-[NX2+]#[NX1]),$([NX2]=[NX2]#[NX1])]
+TERMINAL-AZO = *-[N;D2]=[N;D2]-[C;D1;H3]
+AZO-COMPOUND = [#6][NX2]=[NX2][#6]
+AMINE = [N;$(N-[#6]);!$(N-[!#6;!#1]);!$(N-C=[O,N,S])]
+# AMINE = [NX3]([#1,#6&!$([CX3]=[O,S,N,C])&!$([#6]([NX3])[N,O,S,P])&!$(C([NX3])#N)])([#1,#6&!$([CX3]=[O,S,N,C])&!$([#6]([NX3])[N,O,S,P])&!$(C([NX3])#N)])[#1,#6&!$([CX3]=[O,S,N,C])&!$([#6]([NX3])[N,O,S,P])&!$(C([NX3])#N)]
+HYDRAZONE = [NX3][NX2]=[*]
+DIAZONIUM-SALT = [#6;!$([CX3]=[OX1,SX1])][NX2+]#[NX1]
+# NITRILE = [$([H,#6;!$([CX3]=[OX1,SX1]);!$([CX4]-[NX3])][CX2]#[NX1])]
+# NITRILE = [*;!$([C;D3]=[OX1,SX1])][C;D2]#[N;D1]
+AMIDINIUM = [NX3][CX3]=[NX3+]
+AMIDINE = [$([CX3](=[NX2])[NX3]),$([#1,#6]C(=[NX2])[#7])]
+ISO-NITRILE = [CX1-]#[NX2+]
+DIAZO = *-[N;D2]#[N;D1]
+CYANO = [$(*-[C;D2]#[N;D1]),$(*#[N;D1])]
+HYDRAZINE = *-[N;D2]=[N;D1]
+HYDRAZINE-DERIV = [$([NX4]([H,#6])([H,#6])([H,#6])),$([NX3]([H,#6])([H,#6])),$([NX2]=[H,#6])][$([NX4]([H,#6])([H,#6])([H,#6])),$([NX3]([H,#6])([H,#6])),$([NX2]=[H,#6])]
+
+[NITROGEN_AND_OXYGEN]
+AMINOALCOHOL = [CX4]([H,C])([H,#6])([OH1])[CX4]([H,C])([H,#6])[NH2,$([NH1]([CX4][CX4][OH1])[C;!$([CX3]=[OX1,SX1,NX2,C])])]
+AMINOPHENOL = [$(c([OH1])c[NX3]([#1,#6])[#1,#6]),$(c([OH1])[aR1]c[NX3]([#1,#6])[#1,#6]),$(c1([OH1])aac([NX3]([#1,#6])[#1,#6])aa1)]
+SEMICARBAZONE = [H,#6][CX3]([H,#6])=[NX2][NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[CX3](=[OX1])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[H,#6;!$([CX3]=[OX1,SX1,NX2])]
+HEMIAMINAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OX2][H,#6;!$([CX3]=[OX1,SX1,NX2])])[NX3]([H,*])[H,*]
+AMINO-ACID = [$([$(C-[C;!$(C=[!#6])]-[N;!H0;!$(N-[!#6;!#1]);!$(N-C=[O,N,S])])](=O)([O;H,-])),$([$([NX3H2,NX4H3+]),$([NX3H](C)(C))][CX4H]([*])[CX3](=[OX1])[OX2H,OX1-,N]),$([NX3,NX4+][CX4H]([*])[CX3](=[OX1])[O,N])]
+# AMINO-ACID = [$([NX3H2,NX4H3+]),$([NX3H](C)(C))][CX4H]([*])[CX3](=[OX1])[OX2H,OX1-,N]
+ISOUREA = [NX3;H2,H1;!$([NX3]([CX3]=[OX1,SX1,NX2])([CX3]=[OX1,SX1,NX2]))][CX3](=[NX2][H,#6])[OX2][H,#6]
+# METHYL-AMIDE = *-[N;D2]-[C;D3](=O)-[C;D1;H3]
+OXIME = *=[N;R0]-[O;D1]
+# OXIME-ETHER = [$([#1,#6][CX3]([#1,#6])=[NX2][OX2][#6&!$([CX3]=[OX1,SX1,NX2])]),$([#1,#6]C([#1,#6])=[NX2]O[#6])]
+OXIME-ETHER2 = [#1,#6]C([#1,#6])=[NX2]O[#6]
+CARBOX-ACID-AMIDE = [H,#6][CX3](=[OX1])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX1])])[H,#6;!$([CX3]=[OX1,SX1,NX1])]
+# CARBOX-ACID-PRIM-AMIDE = [H,#6][CX3](=[OX1])[NX3H2]
+# CARBOX-ACID-TERT-AMIDE = [H,#6][CX3](=[OX1])[NX3]([#6;!$([CX3]=[OX1,SX1,NX2])])[#6;!$([CX3]=[OX1,SX1,NX2])]
+LACTAM = [#6R][CX3R](=[OX1])[NX3R]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[#6R;!$([CX3R]=[OX1,SX1,NX2])]
+CARBOX-ACID-HYDRAZINE = [#6R][CX3R](=[OX1])[NX3R]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[#6R;!$([CX3R]=[OX1,SX1,NX2])]
+CARBOX-ACID-AZIDE = [H,#6][CX3](=[OX1])[$([NX2]=[NX2+]=[NX1-]),$([NX2]=[NX2+]=N),$([NX2-]-[NX2+]#[NX1])]
+IMIDO-ESTER = [H,#6][CX3](=[NX2][H,#6])[OX2][#6;!$([CX3]=[OX1,SX1,NX2,C])]
+CARBAMIC-ACID-DERIV = [NX3]([H,*])([H,*])[CX3](=[OX1])[!H!#6!#16!$([Pv5])]
+N-OXIDE = [$([OX1-,OH1][#7X4+]([*])([*])([*])),$([OX1]=[#7X4v5]([*])([*])([*])),$([OX1]=[Nv5X3;!$([Nv5X3](=[OX1])=[OX1])](=[*])([*])),$([OX1-,OH1][#7X3+R](~[R])(~[R])),$([OX1]=[#7v5X3R](~[R])(~[R]))]
+HYDROXYLAMINE = [N;!$([NH1]([CX3]=[OX1,SX1,NX2])[OH1]);!$(N([OH1])([CX3]=[OX1,SX1,NX2])([CX3]=[OX1,SX1,NX2]))]([H,#6])([H,#6])[OH1]
+# CARBOX-ACID-SEC-AMIDE = [H,#6][CX3](=[OX1])[NX3H1][#6;!$([CX3]=[OX1,SX1,NX2])]
+CARBOX-ACID-IMIDE = [CX3](=[OX1])[NX3][CX3](=[OX1])
+# CARBOX-ACID-UNSUBST-IMIDE = [CX3](=[OX1])[NX3H1][CX3](=[OX1])
+# CARBOX-ACID-SUBST-IMIDE = [CX3](=[OX1])[NX3H0][CX3](=[OX1])
+HYDROXAMIC-ACID = [H,#6][CX3](=[OX1])[NX3][OH1]
+URETHANE = [#6][OX2][CX3](=[OX1])[NH2,NH1,NX3]
+SEMICARBAZIDE = [$([NX3][CX3](=[OX1])[NX3;!$([NX3]([CX3]=[OX1,SX1])[NX3][CX3]=[OX1,SX1])][NX3]);!$([NX3][CX3](=[OX1])[NX3]N=C)]
+NITRATE = [#6;!$([CX3]=[OX1,SX1])][OX2][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]
+ACYL-CYANIDE = [H,#6][CX3](=[OX1])[CX2]#[NX1]
+UREA = [#7;!$([#7]=[#7]);!$([#7][#7H2]);!$([#7][#7H1][#6]);!$([#7][#7]([#1,#6])[#1,#6]);!$([#7][#7]=[#6])][CX3](=[OX1])[#7;!$([#7]=[#7]);!$([#7][#7H2]);!$([#7][#7H1][#6]);!$([#7][#7]([#1,#6])[#1,#6]);!$([#7][#7]=[#6])]
+CYANATE = [#6][OX2][CX2]#[NX1]
+ISOCYANATE = *-[N;D2]=[C;D2]=[O;D1]
+NITRITE = [#6;!$([CX3]=[OX1,SX1])][OX2][NX2]=[OX1]
+CARBAMIC-ACID = [OH1][CX3](=[OX1])[NX3]
+NITRO-COMPOUND = *-[N;D3](=[O;D1])[O;D1]
+NITROSO-COMPOUND = *-[N;R0]=[O;D1]
+# HYDROX-AMINE = [#7][OX2H]
+AMIDE = [$(*-C(=O)-[N;D1]),$([NX3][CX3](=[OX1])[#6])]
+CARBONYL-NITROGEN = [OX1]=CN
+
+[SULFUR]
+DITHIOPHENOL = [$(c([SH1])c([SH1])),$(c([SH1])[aR1]c([SH1])),$(c1([SH1])aac([SH1])aa1)]
+THIOHEMIAMINAL = [CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([SX2][#1,#6;!$([CX3]=[OX1,SX1,NX2]);!$(C#N)])[NX3]([#1,*])[#1,*]
+DITHIOL = [CX4]([SH1])([#1,#6])([#1,#6])[CX4]([SH1])([#1,#6])([#1,#6])
+SULFONE = [#6][Sv6X4](=[OX1,SX1,NX2])(=[OX1,SX1,NX2])[#6]
+DISULFIDE = [*][#16X2][#16X2][*]
+# METHYL-THIO = *-[S;D2]-[C;D1;H3]
+THIOCARBONYL = *=[S;D1]([!N])[!N]
+THIOALDEHYDE = [H][CX3]([H,#6])=[SX1]
+THIOKETONE = [#6;!$(C#N)][CX3](=[SX1])[#6;!$(C#N)]
+# ALKYLARYLTHIOETHER = [CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))][SX2]c
+THIOETHER = [SD2]([C])[C]
+DIALKYLTHIOETHER = [CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))][SX2][CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))]
+SULFEN-ACID-DERIV = [#6][Sv2X2][!#6!H!S]
+THIOL = *-[S;D1]
+# ALKYL-THIOL = [C;!$([CX3]=[OX1,SX1,N,C]);!$(C#N)][Sv2H1]
+# ARYL-THIOL = c[Sv2H1]
+
+[OXYGEN_AND_SULFUR]
+METHYL-ESTER-SULFONYL = *-[S;D4](=O)(=O)-[O;D2]-[C;D1;H3]
+METHYL-SULFONYL = *-[S;D4](=O)(=O)-[C;D1;H3]
+SULFUR-ACID-ESTER = [#6][OX2][Sv6X4](=[OX1])(=[OX1])[OH1,OX1-,$([OX2][#6])]
+SULFUR-ACID-DIESTER = [#6][OX2][Sv6X4](=[OX1])(=[OX1])[OX2][#6]
+THIOCARBON-ACID-ESTER = [$([#6&!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[SX1])[OX2,SX2][H,#6&!$([CX3]=[OX1,SX1,NX2])]),$([#6&!$([CX3]=[OX1,SX1,NX2])][SX2][CX3](=[OX1])[OX2,SX2][H,#6&!$([CX3]=[OX1,SX1,NX2])]),$([#6&!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[OX1])[SH1])]
+THIOCARBON-ACID-DIESTER = [$([#6;!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[SX1])[OX2,SX2][#6;!$([CX3]=[OX1,SX1,NX2])]),$([#6;!$([CX3]=[OX1,SX1,NX2])][SX2][CX3](=[OX1])[OX2,SX2][#6;!$([CX3]=[OX1,SX1,NX2])])]
+SULFUR-ACID-MONOESTER = [#6][OX2][Sv6X4](=[OX1])(=[OX1])[OH1,O-]
+SULFON-ACID-ESTER = [#6][Sv6X4](=[OX1])(=[OX1])[OX2][#6]
+THIOCARBOX-ACID-ESTER = [$([H,#6][CX3](=[SX1])[OX2,SX2][#6;!$([CX3]=[OX1,SX1,NX2])]),$([H,#6][CX3](=[OX1])[SX2][#6;!$([CX3]=[OX1,SX1,NX2])])]
+THIOLACTONE = [$([#6R][CX3R](=[SX1])[OX2R,SX2R][#6R;!$([CX3R]=[OX1,SX1,NX2])]),$([#6R][CX3R](=[OX1])[SX2R][#6R;!$([CX3R]=[OX1,SX1,NX2])])]
+THIOCARBON-ACID-MONOESTER = [$([OH1,SH1][CX3](=[SX1])[OX2,SX2][#6;!$([CX3]=[OX1,SX1,NX2])]),$([OH1][CX3](=[OX1])[SX2][#6;!$([CX3]=[OX1,SX1,NX2])]),$([SH1][CX3](=[SX1,OX1])[OX2,SX2][#6;!$([CX3]=[OX1,SX1,NX2])])]
+SULFUR-ACID = [OH1,O-][Sv6X4](=[OX1])(=[OX1])[OX2,O-]
+SULFUR-ACID-DERIV = [!H!#6][Sv6X4](=[OX1])(=[OX1])[!H!#6]
+SULFON-ACID = *-[S;D4](=O)(=O)-[O;D1]
+SULFON-ACID-DERIV = [#6][Sv6X4](=[OX1])(=[OX1])[!H!#6]
+SULFONE = [#6][Sv6X4](=[OX1,SX1,NX2])(=[OX1,SX1,NX2])[#6]
+SULFIN-ACID-ESTER = [#6][Sv4X3](=[OX1])[OX2][#6]
+METHYL-SULFINYL = *-[S;D3](=O)-[C;D1]
+THIOCARBOX-ACID-DERIV = [$([H,#6][CX3](=[SX1])[!H!#6]),$([H,#6][CX3](=[OX1])[SX2])]
+THIOCARBOX-ACID = [$([H,#6][CX3](=[SX1])[OH1,SH1]),$([H,#6][CX3](=[OX1])[SH1])]
+THIOCARBON-ACID-DERIV = [$([CX3](=[SX1])([!H!#6])[!H!#6]);!$([CX3](=[SX1])([#7,#16X2,#15,#5])[#8X2,#16X2,#7,#15,#5]),$([CX3](=[OX1])([!H!#6])[SX2]);!$([CX3](=[OX1])([#7,#15,#5])[#8X2,#16X2,#7,#15,#5])]
+SULFOXIDE = [#6][Sv4X3](=[OX1])[#6]
+SULFIN-ACID-DERIV = [#6][Sv4X3](=[OX1])[!H!#6]
+SULFIN-ACID = [#6][Sv4X3](=[OX1])[OH1,O-]
+SULFEN-ACID-ESTER = [#6;!$([CX3]=[SX1,OX1,NX2])][Sv2X2][OX2][#6]
+SULFEN-ACID = [#6;!$([CX3]=[SX1,OX1,NX2])][Sv2X2][OH1]
+
+[NITROGEN_AND_SULFUR]
+THIOSEMICARBAZONE = [H,#6][CX3]([H,#6])=[NX2][NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[CX3](=[SX1])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX2])])[H,#6;!$([CX3]=[OX1,SX1,NX2])]
+ISOTHIOUREA = [NX3;!$([NX3]([CX3]=[OX1,SX1,NX2])([CX3]=[OX1,SX1,NX2]))]([H,#6])([H,#6])[CX3]([S;!$([SX2]([CX3]=N)C=C)])=[NX2][H,#6]
+THIOCARBOX-ACID-AMIDE = [H,#6][CX3](=[SX1])[NX3]([H,#6;!$([CX3]=[OX1,SX1,NX1])])[H,#6&!$([CX3]=[OX1,SX1,NX1])]
+IMIDOTHIOESTER = [H,#6][CX3](=[NX2][H,#6])[SX2][C;!$([CX3]=[OX1,SX1,NX2])]
+AMINO-THIOL = [SH1][CX4][CX4][NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])
+THIOSEMICARBAZIDE = [$([NX3][CX3](=[SX1])[NX3;!$([NX3]([CX3]=[OX1,SX1])[NX3][CX3]=[OX1,SX1])][NX3]);!$([NX3][CX3](=[SX1])[NX3]N=C)]
+SULFEN-ACID-AMIDE = [#6;!$([CX3]=[SX1,OX1,NX2])][Sv2X2][NX3]([#6;!$([CX3]=[OX1,SX1,NX2])])[#6;!$([CX3]=[OX1,SX1,NX2])]
+SULFONE = [#6][Sv6X4](=[OX1,SX1,NX2])(=[OX1,SX1,NX2])[#6]
+THIOUREA = [#7;!$([#7]=[#7]);!$([#7][#7H2]);!$([#7][#7H1][#6]);!$([#7][#7]([#1,#6])[#1,#6]);!$([#7][#7]=[#6])][CX3](=S)[#7;!$([#7]=[#7]);!$([#7][#7H2]);!$([#7][#7H1][#6]);!$([#7][#7]([#1,#6])[#1,#6]);!$([#7][#7]=[#6])]
+THIOCYANATE = [#6][SX2][CX2]#[NX1]
+ISOTHIOCYANATE = *-[N;D2]=[C;D2]=[S;D1]
+
+[NITROGEN_AND_OXYGEN_AND_SULFUR]
+# METHYL-SULFONAMIDE = *-[N;D2]-[S;D4](=[O;D1])(=[O;D1])-[C;D1;H3]
+SULFUR-ACID-AMIDE-ESTER = [#6][OX2][Sv6X4](=[OX1])(=[OX1])N
+THIOCARBAM-ACID-ESTER = [$([#6][OX2,SX2][CX3](=[SX1])[NX3;!$([NX3]([CX3]=[OX1,SX1])[CX3]=[OX1,SX1])]),$([#6][SX2][CX3](=[OX1])[NX3;!$([NX3]([CX3]=[OX1,SX1])[CX3]=[OX1,SX1])])]
+SULFUR-ACID-AMIDE = [OH1,O-][Sv6X4](=[OX1])(=[OX1])N
+SULFUR-ACID-AMIDE-DIESTER = N[Sv6X4](=[OX1])(=[OX1])N
+SULFONAMIDE = *-[S;D4](=[O;D1])(=[O;D1])-[N;D1]
+THIOCARBAM-ACID = [$([OH1,SH1][CX3](=[SX1])[NX3]),$([SH1][CX3](=[OX1])[NX3])]
+THIOCARBAM-ACID-DERIV = [$([NX3;!$([NX3]([CX3]=[SX1])[CX3]=[OX1,SX1,NX2])][CX3](=[SX1])[!H!#6!#7!$([Pv5])]),$([NX3;!$([NX3]([CX3]=[OX1])[CX3]=[OX1,SX1,NX2])][CX3](=[OX1])[SH1,SX2])]
+SULFIN-ACID-AMIDE = [#6][Sv4X3](=[OX1])[NX3;!$([NX3][CX3]=[OX1,SX1,NX2])]
+
+[HALOGEN]
+THIOPHOSPHOR-ACID-HALIDE = [$([SX1]=[Pv5X4]([F,Cl,Br,I])([!#6])[!#6]),$([OX1]=[Pv5X4]([F,Cl,Br,I])([SX2,SH1])[!#6])]
+PHOSPHORIC-ACID-HALIDE = [OX1]=[Pv5X4]([F,Cl,Br,I])([!#6!$([SX2])])[!#6!$([SX2])]
+PHOSPHON-ACID-HALIDE = [OX1]=[Pv5X4]([F,Cl,Br,I])([#6])[!#6!$([SX2])]
+THIOCARBON-ACID-ESTER-HALIDE = [$([#6;!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[SX1])[F,Cl,Br,I]),$([#6;!$([CX3]=[OX1,SX1,NX2])][SX2][CX3](=[OX1])[F,Cl,Br,I])]
+SULFONYL-HALIDE = *-[S;D4](=O)(=O)-[F,Cl,Br,I]
+SULFURYL-HALIDE = [!H!#6][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]
+IMIDOYL-HALIDE = [H,#6][CX3](=[NX2][H,#6])[F,Cl,Br,I]
+CARBONIC-ACID-ESTER-HALIDE = [#6][OX2][CX3](=[OX1])[F,Cl,Br,I]
+CARBAMIC-ACID-HALIDE = [F,Cl,Br,I][CX3](=[OX1])[NX3]
+SULFIN-ACID-HALIDE = [#6][Sv4X3](=[OX1])[F,Cl,Br,I]
+SULFEN-ACID-HALIDE = [#6;!$([CX3]=[SX1,OX1,NX2])][Sv2X2][F,Cl,Br,I]
+# ACYL-FLUORIDE = [H,#6][CX3](=[OX1])F
+# ACYL-CHLORIDE = [H,#6][CX3](=[OX1])Cl
+# ACYL-BROMIDE = [H,#6][CX3](=[OX1])Br
+# ACYL-IODIDE = [H,#6][CX3](=[OX1])I
+ACYL-HALIDE = [H,#6][CX3](=[OX1])[F,Cl,Br,I]
+# TRI-FLUORO-METHYL = *-[C;D4](F)(F)F
+# VINYL-FLUORIDE = F[CX3]=[CX3]
+# VINYL-CHLORIDE = Cl[CX3]=[CX3]
+# VINYL-BROMIDE = Br[CX3]=[CX3]
+# VINYL-IODIDE = I[CX3]=[CX3]
+VINYL-HALIDE = [F,Cl,Br,I][CX3]=[CX3]
+# ALKYNYL-FLUORIDE = F[CX2]#[CX2]
+# ALKYNYL-CHLORIDE = Cl[CX2]#[CX2]
+# ALKYNYL-BROMIDE = Br[CX2]#[CX2]
+# ALKYNYL-IODODE = I[CX2]#[CX2]
+ALKYNYL-HALIDE = [F,Cl,Br,I][CX2]#[CX2]
+# BENZYL-FLUORIDE = a[CX4]F
+# BENZYL-CHLORIDE = a[CX4]Cl
+# BENZYL-BROMIDE = a[CX4]Br
+# BENZYL-IODIDE = a[CX4]I
+BENZYL-HALIDE = a[CX4][F,Cl,Br,I]
+# ALKYL-FLUORIDE = [$([CX4]F);!$([CX4](Cl)[CX3]=[CX3]),!$([CX4](Cl)[CX2]#[CX2]),!$([CX4](Cl)a)]
+# ALKYL-CHLORIDE = [$([CX4]Cl);!$([CX4](Cl)[CX3]=[CX3]),!$([CX4](Cl)[CX2]#[CX2]),!$([CX4](Cl)a)]
+# ALKYL-BROMIDE = [$([CX4]Br);!$([CX4](Br)[CX3]=[CX3]),!$([CX4](Br)[CX2]#[CX2]),!$([CX4](Br)a)]
+# ALKYL-IODIDE = [$([CX4]I);!$([CX4](I)[CX3]=[CX3]),!$([CX4](I)[CX2]#[CX2]),!$([CX4](I)a)]
+ALKYL-HALIDE = [$([CX4][F,Cl,Br,I]);!$([CX4]([F,Cl,Br,I])[CX3]=[CX3]),!$([CX4]([F,Cl,Br,I])[CX2]#[CX2]),!$([CX4]([F,Cl,Br,I])a)]
+# ARYL-FLUORIDE = aF
+# ARYL-CHLORIDE = aCl
+# ARYL-BROMIDE = aBr
+# ARYL-IODIDE = aI
+ARYL-HALIDE = a[F,Cl,Br,I]
+HALOGEN-DERIV = *-[#9,#17,#35,#53]
+
+[3_ATOMS_CYCLE]
+OXADIAZIRIDINE = [#8R1]1-[#7R1]-[#7R1]1
+DIOXAZIRIDINE = [#8R1]1-[#8R1]-[#7R1]1
+OXAZIRIDINE = [#8R1]1-[#7R1]-[#6R1]-1
+THIODIAZIRIDINE = [#16X2R1]1-[#7R1]-[#7R1]1
+DITHIAZIRIDINE = [#16X2R1]1-[#16X2R1]-[#7R1]1
+TRIAZIRIDINE = [#7R1]1-[#7R1]-[#7R1]-1
+DIAZIRIDINE = [#7R1]1-[#7R1]-[#6R1]-1
+TRIOXIRANE = [#8R1]1-[#8R1]-[#8R1]-1
+DIOXIRANE = [#8R1]1-[#8R1]-[#6R1]-1
+THIAZIRIDINE = [#16X2R1]1-[#7R1]-[#6R1]-1
+TRITHIIRANE = [#16X2R1]1-[#16X2R1]-[#16X2R1]1
+THIODIAZIRENE = [#7R1]1=[#7R1]-[#16X2R1]1
+OXADIAZIRENE = [#7R1]1=[#7R1]-[#8R1]1
+OXAZIRENE = [#7R1]1=[#6R1]-[#8R1]-1
+TRIAZIRENE = [#7R1]1-[#7R1]=[#7R1]1
+DIAZIRENE = [$([#7R1]1-[#7R1]=[#6R1]-1),$([#7R1]1=[#7R1]-[#6R1]-1)]
+AZIRENE = [$([#7R1]1-[#6R1]=[#6R1]-1),$([#7R1]1=[#6R1]-[#6R1]-1)]
+OXIRENE = [#8R1]1-[#6R1]=[#6R1]-1
+THIIRENE = [#16X2R1]1-[#6R1]=[#6R1]-1
+THIAZERENE = [#7R1]1=[#6R1]-[#16X2R1]-1
+3-ATOM-HETEROCYCLE = [!#6!#1;R1]1~[*R1]~[*R1]~1
+CYCLO-PROPYL = [CR1]1[CR1][CR1]1
+# CYCLO-PROPYL = *-[C;D2]1-[C;D2]-[C;D2]1
+
+[OXIRANE_ETC]
+AZIRIDINE = [#7R1]1-[#6R1]-[#6R1]-1
+OXIRANE = [#8R1]1-[#6R1]-[#6R1]-1
+THIIRANE = [#16X2R1]1-[#6R1]-[#6R1]-1
+
+[4_ATOMS_CYCLE]
+DIAZETINE = [$([#7]1=,:[#7]-,:[#6]-,=,:[#6]-,:1),$([#7]1-,:[#7]=,:[#6]-,:[#6]-,=,:1),$([#7]1-,:[#7]-,:[#6]=,:[#6]-,=,:1),$([#7]1=,:[#6]-,:[#7]-,=,:[#6]-,:1)]
+DIOXETENE = [#8R1]1-,:[#8R1]-,:[#6R1]=,:[#6R1]-,:1
+DITHIETENE = [#16R1]1-,:[#16R1]-,:[#6R1]=,:[#6R1]-,:1
+DIAZETIDINE = [$([NR1]1[CR1][CR1][NR1]1),$([NR1]1[CR1][NR1][CR1]1)]
+DIOXETANE = [$([OR1]1[OR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1]1)]
+DITHIETANE = [$([SX2R1]1[SX2R1][CR1][CR1]1),$([SX2R1]1[CR1][SX2R1][CR1]1)]
+AZETE = [#7R1]1=[#6R1][#6R1]=[#6R1]1
+OXETENE = [#8R1]1[#6R1]=[#6R1][#6R1]1
+THIETENE = [#16X2R1]1[#6R1]=[#6R1][#6R1]1
+AZETIDINE = [#7R1]1-[#6R1]-[#6R1]-[#6R1]-1
+OXETANE = [#8R1]1-[#6R1]-[#6R1]-[#6R1]-1
+THIETANE = [#16X2R1]1-[#6R1]-[#6R1]-[#6R1]-1
+4-ATOM-HETEROCYCLE = [!#6!#1;R1]1~[*R1]~[*R1]~[*R1]~1
+CYCLOBUTYL = [CR1]1[CR1][CR1][CR1]1
+
+[5_ATOMS_CYCLE]
+PENTAZOLE = [nR1]1[nR1][nR1][nR1][nR1]1
+PENTAZOLIDINE = [NR1]1[NR1][NR1][NR1][NR1]1
+PENTAOXOLANE = [OR1]1[OR1][OR1][OR1][OR1]1
+PENTATHIOLANE = [SR1]1[SR1][SR1][SR1][SR1]1
+TETRAZOLE = [nR1]1[nR1][nR1][nR1][cR1]1
+OXATRIAZOLE = [$([oR1]1[nR1][nR1][nR1][cR1]1),$([oR1]1[nR1][nR1][cR1][nR1]1)]
+THIATRIAZOLE = [$([sR1]1[nR1][nR1][nR1][cR1]1),$([sR1]1[nR1][nR1][cR1][nR1]1)]
+TRIAZOLIDINE = [$([NR1]1[NR1][NR1][CR1][CR1]1),$([NR1]1[NR1][CR1][NR1][CR1]1)]
+TRIOXOLANE = [$([OR1]1[OR1][OR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][CR1]1)]
+TRITHIOLANE = [$([SR1]1[SR1][SR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][CR1]1)]
+TRIAZOLE = [$([nR1]1[nR1][nR1][cR1][cR1]1),$([nR1]1[nR1][cR1][nR1][cR1]1)]
+OXADIAZOLE = [$([oR1]1[nR1][nR1][cR1][cR1]1),$([oR1]1[nR1][cR1][nR1][cR1]1),$([oR1]1[nR1][cR1][cR1][nR1]1),$([oR1]1[cR1][nR1][nR1][cR1]1)]
+TETRAZOLIDINE = [NR1]1[NR1][NR1][NR1][CR1]1
+TETRAOXOLANE = [OR1]1[OR1][OR1][OR1][CR1]1
+TETRATHIOLANE = [SR1]1[SR1][SR1][SR1][CR1]1
+OXAZOLE = [$([oR]1[nR][cR][cR][cR]1),$([oR]1[cR][nR][cR][cR]1)]
+OXAZOLIUM = [$([oR]1[nx2+][cR][cR][cR]1),$([oR]1[cR][nx2+][cR][cR]1)]
+THIAZOLE = [$([sR]1[nR][cR][cR][cR]1),$([sR]1[cR][nR][cR][cR]1)]
+THIAZOLIUM = [$([sR]1[nx2+][cR][cR][cR]1),$([sR]1[cR][nx2+][cR][cR]1)]
+DIAZOLE = [$([nR1]1[nR1][cR1][cR1][cR1]1),$([nR1]1[cR1][nR1][cR1][cR1]1)]
+THIOPHENE = [sR1]1[cR1][cR1][cR1][cR1]1
+PYRROL = [nR1]1[cR1][cR1][cR1][cR1]1
+FURAN =  [oR1]1[cR1][cR1][cR1][cR1]1
+AZOLE = [$([nr5]:[nr5,or5,sr5]),$([nr5]:[cr5]:[nr5,or5,sr5])]
+PYRROLINE = [$([NR1]1=[CR1][CR1][CR1][CR1]1),$([NR1]1[CR1]=[CR1][CR1][CR1]1),$([NR1]1[CR1][CR1]=[CR1][CR1]1)]
+PYRROLIDINE = [NR1]1[CR1][CR1][CR1][CR1]1
+5-ATOM-HETEROCYCLE = [!#6!#1;R1]1~[*;R1]~[*;R1]~[*;R1]~[*;R1]~1
+CYCLOPENTYL = [CR1]1~[CR1]~[CR1]~[CR1]~[CR1]~1
+
+[6_ATOMS_CYCLE]
+IMINOHETARENE = [$(c(=N)[$(n[H,#6]),o,s]),$(c(=N)a[$(n[H,#6]),o,s]),$(c(=N)aa[$(n[H,#6]),o,s]),$(c(=N)aaa[$(n[H,#6]),o,s])]
+THIOXOHETARENE = [$(c(=[SX1])[$(n[H,#6]),o,s]),$(c(=[SX1])a[$(n[H,#6]),o,s]),$(c(=[SX1])aa[$(n[H,#6]),o,s]),$(c(=[SX1])aaa[$(n[H,#6]),o,s])]
+OXOHETARENE = [$(c(=[OX1])[$(n[H,#6]),o,s]),$(c(=[OX1])a[$(n[H,#6]),o,s]),$(c(=[OX1])aa[$(n[H,#6]),o,s]),$(c(=[OX1])aaa[$(n[H,#6]),o,s])]
+HEXAZINE = [nR1]1[nR1][nR1][nR1][nR1][nR1]1
+PENTOXANE = [OR1]1[OR1][OR1][OR1][OR1][CR1]1
+PENTATHIANE = [SR1]1[SR1][SR1][SR1][SR1][CR1]1
+PENTAZINE = [nR1]1[nR1][nR1][nR1][nR1][cR1]1
+TETROXANE = [$([OR1]1[OR1][OR1][OR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][OR1][CR1]1)]
+TETRATHIANE = [$([SR1]1[SR1][SR1][SR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][SR1][CR1]1)]
+TETRAZINE = [$([nR1]1[nR1][nR1][nR1][cR1][cR1]1),$([nR1]1[nR1][nR1][cR1][nR1][cR1]1),$([nR1]1[nR1][cR1][nR1][nR1][cR1]1)]
+TRIOXANE = [$([OR1]1[OR1][OR1][CR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1][OR1][CR1]1)]
+TRITHIANE = [$([SR1]1[SR1][SR1][CR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][CR1][CR1]1),$([SR1]1[CR1][SR1][CR1][SR1][CR1]1)]
+TRIAZINE = [$([nR1]1[nR1][nR1][cR1][cR1][cR1]1),$([nR1]1[nR1][cR1][nR1][cR1][cR1]1),$([nR1]1[cR1][nR1][cR1][nR1][cR1]1)]
+DIOXANE = [$([OR1]1[OR1][CR1][CR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1][CR1][CR1]1),$([OR1]1[CR1][CR1][OR1][CR1][CR1]1)]
+DITHIANE = [$([SR1]1[SR1][CR1][CR1][CR1][CR1]1),$([SR1]1[CR1][SR1][CR1][CR1][CR1]1),$([SR1]1[CR1][CR1][SR1][CR1][CR1]1)]
+PYRIMIDINE = [nR1]1[cR1][nR1][cR1][cR1][cR1]1
+PYRAZINE = [nR1]1[cR1][cR1][nR1][cR1][cR1]1
+PYRIDAZINE = [nR1]1[nR1][cR1][cR1][cR1][cR1]1
+THIOPYRAN = [SR1]1[CR1]=[CR1][CR1]-,=[CR1]-,=[CR1]1
+PYRAN = [OR1]1[CR1]=[CR1][CR1]-,=[CR1]-,=[CR1]1
+PYRIDINE = [nR1]1[cR1][cR1][cR1][cR1][cR1]1
+PYRIDINIUM = [nx2+]1[cR][cR][cR][cR][cR]1
+PIPERIDINE = [NR1]1[CR1][CR1][CR1][CR1][CR1]1
+BENZENE = [$([cR1]1[cR1][cR1][cR1][cR1][cR1]1),$([cR]1[cR][cR][cR][cR][cR]1)]
+6-ATOM-HETEROCYCLE = [!#6!#1;R1]1~[*R1]~[*R1]~[*R1]~[*R1]~[*R1]~1
+CYCLOHEXYL = [CR1]1~[CR1]~[CR1]~[CR1]~[CR1]~[CR1]~1
+
+[HETEROCYCLE]
+HETEROCYCLE = [*R]~[*R&!#6]~[*R]
+AROM-HETEROCYCLE = [a!#6!r0]
+
+[MULTI_RING]
+BENZOOXAZOLE = [cR1]1[cR1][cR1][cR1][cR2]2[nR1][cR1][oR1][cR2]12
+BENZOTHIAZOLE = [cR1]1[cR1][cR1][cR1][cR2]2[nR1][cR1][sR1][cR2]12
+INDOLE = [cR1]1[cR1][cR1][cR1][cR2]2[nR1][cR1][cR1][cR2]12
+
+[PHOSPHORUS]
+PHOSPHORIC-ACID-ESTER = [OX1]=[Pv5X4]([OX2][#6])([!#6!$([SX2])])[!#6!$([SX2])]
+PHOSPHORIC-ACID-DERIV = [OX1]=[Pv5X4]([H,!#6!$([SX2])])([H,!#6!$([SX2])])[H,!#6!$([SX2])]
+PHOSPHORIC-ACID-AMIDE = [OX1]=[Pv5X4]([NX3])([!#6!$([SX2])])[!#6!$([SX2])]
+THIOPHOSPHOR-ACID-ESTER = [$([SX1]=[Pv5X4]([OX2,SX2][#6])([!#6])[!#6]),$([OX1]=[Pv5X4]([SX2][#6])([!#6])[!#6])]
+PHOSPHON-ACID-ESTER = [OX1]=[Pv5X4]([#6])([OX2][#6])[!#6]
+THIOPHOSPHOR-ACID = [$([SX1]=[Pv5X4]([OH1,SH1])([O,S])[O,S]),$([OX1]=[Pv5X4]([SH1])([O,S])[O,S])]
+THIOPHOSPHOR-ACID-AMIDE = [$([SX1]=[Pv5X4]([NX3])([!#6])[!#6]),$([OX1]=[Pv5X4]([NX3])([SX2,SH1])[!#6])]
+THIOPHOSPHOR-ACID-DERIV = [$([SX1]=[Pv5X4]([H,!#6])([H,!#6])[H,!#6]),$([OX1]=[Pv5X4]([SX2])([H,!#6])[H,!#6])]
+PHOSPHINOXIDE = [Pv5X4](=[OX1])([#6])([#6])[#6]
+PHOSPHON-ACID = [OX1]=[Pv5X4]([#6])([OH1])O
+PHOSPHON-ACID-AMIDE = [OX1]=[Pv5X4]([NX3])([#6])[!#6!$([SX2])]
+PHOSPHON-ACID-DERIV = [OX1]=[Pv5X4]([#6])([!#6])[!#6]
+PHOSPHORIC-ACID = [OX1]=[Pv5X4]([OH1])([O])[O]
+PHOSPHINE = [Pv3X3]([#6])([#6])[#6]
+
+[MISC]
+BORONIC-ACID-ESTER = [BX3]([#6])([OX2][#6])[H,!#6]
+BORONIC-ACID = [BX3]([#6])([OH1,SH1])[O,S]
+BORONIC-ACID-DERIV = [Bv3X3]([#6])([!#6])[!#6]
+ORGANOLITHIUM = [Li][#6]
+ORGANOMAGNESIUM = [Mg][#6]
+ORGANOMETALLIC = [!H!#2!#5!#6!#7!#8!#9!#10!#14!#15!#16!#17!#18!#32!#33!#34!#35!#36!#51!#52!#53!#54!#84!#85!#86]~[#6]
+CATION = [+,++,+3,+4,+5,+6,+7,$([Nv4]),$([Ov3])]
+ANION = [-,--,-3,-4,-5,-6,-7]
